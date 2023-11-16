@@ -1,0 +1,36 @@
+@mixin flex($justify-content, $aling-items){
+   display: flex;
+   justify-content: $justify-content;
+   align-items: $aling-items;
+}
+
+@mixin indentations($margin, $padding){
+   margin: $margin;
+   padding: $padding;
+}
+
+@mixin pseudo-element($content, $display, $position){
+   content: $content;
+   display: $display;
+   position: $position;
+}
+
+@mixin dimensions($width, $height){
+   width: $width;
+   height: $height;
+}
+
+@mixin font-style($fz, $fw, $lh){
+   font-size: $fz;
+   font-weight: $fw;
+   line-height: $lh;
+}
+
+@mixin glass-efect{
+   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+   --webkit-backdrop-fillter: blur(20px);
+   backdrop-filter: blur(20px);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+   border: 1px solid rgba(255, 255, 255, 0.18);
+
+}

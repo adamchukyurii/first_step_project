@@ -1,0 +1,53 @@
+.header{
+   &__list{
+      @include flex(space-between, center);
+   }
+   &__navigation{
+
+   }
+
+   &__row{
+      @include flex(center, center);
+
+      li{
+         color: var(--base-fcolor);
+         text-transform: capitalize;
+         cursor: pointer;
+         @include indentations(1.3020833333333333vw calc(2.0833333333333335vw/2), 0);
+         @include font-style(var(--navbar-fz), var(--base-fw), var(--navbar-lh));
+         &:first-child{
+            @include indentations( 0 calc(2.0833333333333335vw/2) 0 0, 0)
+         }
+
+         &:last-child{
+            @include indentations( 0 0 0 calc(2.0833333333333335vw/2), 0)
+         }
+      }
+   }
+
+   &__element:last-child{
+      ul{
+         @include flex(center, center);
+         li{
+            color: #fff;
+            text-transform: uppercase;
+            @include indentations(0 .78125vw, 0.78125vw 0.78125vw 0.78125vw 2.0833333333333335vw);
+            @include glass-efect;
+            border-radius: 8px;
+            position: relative;
+
+            &:first-child::before{
+               @include pseudo-element(url("../../../../assets/icons/globe.png"), inline-block, absolute);
+               left: 0.6770833333333334vw;
+               top: 0.8770833333333334vw;
+            }
+
+            &:last-child::before{
+               @include pseudo-element(url("../../../../assets/icons/dollar.png"), inline-block, absolute);
+               left: 0.4670833333333334vw;
+               top: 0.7570833333333334vw;
+            }
+         }
+      }
+   }
+}
