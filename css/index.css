@@ -24,6 +24,7 @@
   --btn-dw-hover: rgba(98, 127, 227, 0.7);
   --input-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(0, 0, 0, 0) 100%),
   linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  --navbar-info-btn-backround: ;
 }
 
 * {
@@ -135,4 +136,66 @@ body {
   position: absolute;
   left: 0.4670833333vw;
   top: 0.7570833333vw;
+}
+
+.greettings {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: url("../../../../assets/img/planet-background.png") right/contain no-repeat border-box, url("../../../../assets/img/background.png") no-repeat center/cover;
+  margin: 0;
+  padding: 9.375vw 8.59375vw 0 8.59375vw;
+}
+.greettings__list {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.greettings__element {
+  width: 100%;
+  height: auto;
+}
+.greettings__items {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.greettings__item h1 {
+  font-size: var(--h1-fz);
+  font-weight: var(--h1-fw);
+  line-height: var(--h1-lh);
+  color: #fff;
+}
+.greettings__item p {
+  font-size: var(--base-fz);
+  font-weight: var(--base-fw);
+  line-height: var(--h3-lh);
+  color: #fff;
+}
+.greettings__item img {
+  margin: -3.125vw 0 0 5.2083333333vw;
+  padding: 0;
 }

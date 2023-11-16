@@ -1,0 +1,34 @@
+.greettings{
+   @include dimensions(100%, fit-content);
+   // @include background;
+   background:url("../../../../assets/img/planet-background.png") right/contain no-repeat border-box, url("../../../../assets/img/background.png") no-repeat center/cover;
+   @include indentations(0, 9.375vw 8.59375vw 0 8.59375vw);
+   &__list{
+      @include dimensions(100%, fit-content);
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+   }
+
+   &__element{
+      @include dimensions(100%, auto);
+   }
+
+   &__items{
+      @include dimensions(100%, auto);
+      @include flex(space-between, flex-start)
+   }
+
+   &__item h1{
+      @include font-style(var(--h1-fz), var(--h1-fw), var(--h1-lh));
+      color: #fff;
+   }
+
+   &__item p{
+      @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+      color: #fff;
+   }
+
+   &__item img{
+      @include indentations(-3.125vw 0 0 5.208333333333333vw, 0);
+   }
+}
