@@ -1,0 +1,5 @@
+.instruments{
+   @include dimensions(100%, fit-content);
+   @include indentations(0, 4.948vw 5.208333333333333vw 8.59375vw);
+   background: url(../../../../assets/img/background2.png) center/cover;
+}

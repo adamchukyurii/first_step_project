@@ -1,0 +1,98 @@
+.supporting {
+  @include dimensions(100%, fit-content);
+  @include indentations(0, 9.375vw 0 5.208333333333333vw 8.59375vw);
+
+  &__list {
+    @include flex(space-between, flex-start);
+  }
+
+  &__element {
+    @include flex(flex-start, flex-start);
+    flex: 1 1 40%;
+    &:last-child{
+      @include flex(center, center);
+    }
+  }
+
+  &__items {
+    @include dimensions(100%, fit-content);
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    color: #fff;
+  }
+
+  &__item {
+    @include dimensions(100%, fit-content);
+    h2 {
+      @include indentations(0 0 1.354vw 0, 0);
+      @include font-style(var(--h2-fz), var(--h2-fw), var(--h2-lh));
+    }
+
+    li {
+      @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+    }
+  }
+
+  .item__list {
+    @include dimensions(100%, fit-content);
+    @include flex(space-between, center);
+    @include indentations(2.396vw 0 0 0, 0.052vw 0.938vw);
+    background: rgba(21, 24, 34, 1);
+    border-radius: 8px;
+    max-width: 493px;
+    li {
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      span:first-child {
+        @include font-style(0.625vw, var(--small-fw), var(--navbar-lh));
+        text-transform: uppercase;
+        background: rgba(26, 32, 74, 1);
+        border-radius: 37px;
+        @include indentations(0, 0.313vw 1.146vw);
+      }
+      span:last-child {
+        @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__balls {
+    @include dimensions(80%, fit-content);
+    display: grid;
+    transform: rotate(45deg);
+    justify-content: center;
+    li {
+      @include flex(center, center);
+      @include dimensions(100%, fit-content);
+      white-space: nowrap;
+      @include indentations(0 0 -50px 0, 0);
+      img {
+        transform: rotate(-45deg);
+
+        &:nth-child(-n + 2) {
+          @include indentations(0 -50px 0 0, 0);
+        }
+      }
+
+      &:first-child{
+        :not(img:nth-child(2)){
+          @include indentations(0 -50px -70px 0, 0);
+        }
+        img:last-child{
+          @include indentations(0 -50px -40px 0, 0);
+        }
+      }
+
+      &:last-child{
+        :not(img:nth-child(2)){
+          @include indentations(-70px -50px 0 0, 0);
+        }
+
+        img:last-child{
+          @include indentations(-50px -50px 0 0, 0);
+        }
+      }
+    }
+  }
+}

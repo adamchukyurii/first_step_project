@@ -1,6 +1,5 @@
 .greettings{
    @include dimensions(100%, fit-content);
-   // @include background;
    background:url("../../../../assets/img/planet-background.png") right/contain no-repeat , url("../../../../assets/img/background.png") no-repeat center/cover;
    @include indentations(0, 9.375vw 8.59375vw 5.208333333333333vw 8.59375vw);
    &__list{
@@ -107,10 +106,14 @@
       a{
          @include indentations(0, 0.9375vw);
          color: #fff;
-         font-weight: large;
+         font-weight: bolder;
          font-size: 0.9375vw;
          border-radius: 50%;
          box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.59);
+         transition: all 0.3s ease-in-out 0s;
+         &:hover{
+            background: #6d6a6a3a;
+         }
       }
    }
 }
