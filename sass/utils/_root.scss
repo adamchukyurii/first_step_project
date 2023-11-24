@@ -32,7 +32,10 @@
    --btn-dw-hover: rgba(98, 127, 227, 0.7);
 
 
-   --input-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(0, 0, 0, 0) 100%),
+   --input-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%),
+   linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+   --input-bg-hover: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(0, 0, 0, 0) 100%),
    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 
    --navbar-info-btn-backround:

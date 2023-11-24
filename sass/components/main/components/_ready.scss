@@ -1,0 +1,142 @@
+.ready{
+   @include dimensions(100%, fit-content);
+   @include indentations(0, 4.948vw 5.208333333333333vw 8.59375vw);
+   display: block;
+
+   &__list{
+      @include dimensions(100%, fit-content);
+      @include flex(flex-start, center);
+      flex-direction: column;
+   }
+
+   &__element{
+      @include dimensions(100%, fit-content);
+      &:nth-child(2){
+         @include indentations(2.604vw 0 0 0, 0)
+      }
+
+      &:last-child{
+         @include indentations(1.563vw 0 0 0, 3.906vw 2.865vw);
+         border-radius: 28px;
+         background: url(../../../../assets/img/background3.png) center/cover no-repeat;
+      }
+
+   }
+
+   &__items{
+      @include dimensions(100%, fit-content);
+      text-align: center;
+      color: #fff;
+      h2{
+         @include font-style(var(--h2-fz), var(h2-fw), var(h2-lh));
+      }
+
+      p{
+         @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+      }
+   }
+
+   &__cards, .card__items{
+      @include flex(space-between, flex-start);
+   }
+
+   &__cards{
+      gap: 1.25vw;
+   }
+
+   &__card{
+      @include indentations(0, 1.563vw);
+      border-radius: 8px;
+      flex: 1 0 32.33333333%;
+      &:first-child{
+         background: url("../../../../assets/img/card-hand_1.png") right/contain no-repeat , rgba(21, 24, 34, 1);
+      }
+
+      &:nth-child(2){
+         background: url("../../../../assets/img/card-hand_2.png") right/contain no-repeat , rgba(21, 24, 34, 1);
+      }
+
+      &:last-child{
+         background: url("../../../../assets/img/card-hand_3.png") right/contain no-repeat , rgba(21, 24, 34, 1);
+      }
+   }
+
+   .card__items{
+      flex-direction: column;
+      color: #fff;
+      text-transform: uppercase;
+      .card__item:first-child{
+         @include font-style(var(--base-fz), var(--bold-fw), var(--h3-lh));
+      }
+      .card__item:nth-child(2){
+         @include font-style(var(--h3-fz), var(--h3-fw), var(--h3-lh));
+      }
+      .card__item:last-child{
+         background: var(--btn-color);
+         border-radius: 12px;
+         @include indentations(1.6666666666666667vw 0 0 0, calc(1.6666666666666667vw/2) 1.6666666666666667vw);
+         @include font-style(var(--btn-fz), var(--bold-fw), var(--h3-lh));
+         text-align: center;
+         max-width: 11.666666666666666vw;
+         transition: .5s all ease-in 0s;
+         text-transform: uppercase;
+         a{
+            color: #fff;
+         }
+         &:hover{
+            background: var(--btn-hover);
+         }
+      }
+   }
+
+   &__subscription-news{
+      @include dimensions(100%, fit-content);
+      color:#fff;
+      h2{
+         @include font-style(var(--h2-fz), var(--h2-fw), var(--h3));
+      }
+
+      p{
+         @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+      }
+
+      .input{
+         @include flex(space-between, center);
+         position: relative;
+         input{
+            width: 100%;
+            color: #fff;
+            background: none;
+            border: none;
+            @include font-style(var(--base-fz), var(--bold-fw), var(--h3-lh));
+            border: none;
+            border-radius: 14px;
+            @include indentations(1.563vw 0 0 0, 1.042vw 1.563vw);
+            background: var(--input-bg);
+            &:focus{
+               border: none;
+               outline: none;
+            }
+         }
+
+         button{
+            position: absolute;
+            right: 0.521vw;
+            top: 1.963vw;
+            color: #fff;
+            background: var(--btn-color);
+            border-radius: 66px;
+            @include indentations(0 0 0, calc(1.6666666666666667vw/2) 1.6666666666666667vw);
+            @include font-style(var(--btn-fz), var(--bold-fw), var(--h3-lh));
+            text-align: center;
+            max-width: 11.666666666666666vw;
+            transition: .5s all ease-in 0s;
+            text-transform: uppercase;
+            border: none;
+            &:hover{
+               background: var(--btn-hover);
+            }
+         }
+      }
+   }
+}

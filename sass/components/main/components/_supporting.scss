@@ -1,9 +1,10 @@
 .supporting {
   @include dimensions(100%, fit-content);
-  @include indentations(0, 9.375vw 0 5.208333333333333vw 8.59375vw);
-
+  @include indentations(0, 1.5vw  0 5.208333333333333vw 8.59375vw);
+  overflow-x: hidden;
+  overflow: hidden;
   &__list {
-    @include flex(space-between, flex-start);
+    @include flex(space-between, center);
   }
 
   &__element {
@@ -24,6 +25,7 @@
   &__item {
     @include dimensions(100%, fit-content);
     h2 {
+      text-transform: capitalize;
       @include indentations(0 0 1.354vw 0, 0);
       @include font-style(var(--h2-fz), var(--h2-fw), var(--h2-lh));
     }
@@ -58,7 +60,6 @@
   }
 
   &__balls {
-    @include dimensions(80%, fit-content);
     display: grid;
     transform: rotate(45deg);
     justify-content: center;
@@ -77,20 +78,20 @@
 
       &:first-child{
         :not(img:nth-child(2)){
-          @include indentations(0 -50px -70px 0, 0);
+          @include indentations(0 -2.604vw -3.646vw 0, 0);
         }
         img:last-child{
-          @include indentations(0 -50px -40px 0, 0);
+          @include indentations(0 -2.604vw -2.083vw 0, 0);
         }
       }
 
       &:last-child{
         :not(img:nth-child(2)){
-          @include indentations(-70px -50px 0 0, 0);
+          @include indentations(-3.646vw -2.604vw 0 0, 0);
         }
 
         img:last-child{
-          @include indentations(-50px -50px 0 0, 0);
+          @include indentations(-2.604vw -2.604vw 0 0, 0);
         }
       }
     }

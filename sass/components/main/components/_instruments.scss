@@ -2,4 +2,72 @@
    @include dimensions(100%, fit-content);
    @include indentations(0, 4.948vw 5.208333333333333vw 8.59375vw);
    background: url(../../../../assets/img/background2.png) center/cover;
+
+   &__list{
+      @include flex(flex-start, flex-start);
+      gap: 2.604vw;
+   }
+
+   &__element{
+      @include flex(flex-start, flex-start);
+      flex: 1 1 45%;
+   }
+
+   &__text{
+      width: 100%;
+      color: #fff;
+      h2{
+         @include indentations(0 0 1.354vw 0, 0);
+         @include font-style(var(--h2-fz), var(--h2-fw), var(--h2-lh));
+      }
+      p{
+         @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+      }
+   }
+
+   &__platforms{
+      width: 30%;
+      @include flex(space-between, center);
+      @include indentations(2.083vw 0, 0);
+      li{
+         transition: all 0.5s ease-in-out 0s;
+         &:hover{
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.171);
+            box-shadow: 0px 4px 30px 10px rgba(255, 255, 255, 0.253);
+         }
+      }
+   }
+
+   &__button{
+      @include indentations(0, 0.729vw 1.25vw 0.729vw 3.333vw);
+      @include font-style(var(--btn-fz), var(--bold-fw), var(--h2-lh));
+      background: var(--btn-dw-color);
+      border: none;
+      color: rgba(136, 134, 255, 1);
+      border-radius: 12px;
+      position: relative;
+      transition: all .5s ease-in-out 0s;
+      &::before{
+         @include pseudo-element(url("../../../../assets/icons/apple_smal.png"), inline-block, absolute);
+         left: 1.042vw;
+         top: 0.891vw;
+      }
+      &:hover{
+         cursor: pointer;
+         background: var(--btn-dw-hover);
+      }
+   }
+
+   &__mac{
+      @include flex(flex-end, center);
+      position: relative;
+      flex: 0 0 34.132vw;
+      max-width: 655.33px;
+      background: url("../../../../assets/img/macbookpro.png") no-repeat;
+
+      img{
+         scale: 1.05;
+      }
+   }
 }
