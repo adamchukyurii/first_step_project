@@ -78,7 +78,6 @@
       }
 
       &__balls{
-         display: none;
          scale: .6;
       }
 
@@ -100,6 +99,14 @@
             display: none;
             visibility: hidden;
          }
+      }
+   }
+
+   .input{
+      flex-direction: column;
+      button{
+         width: 100%;
+         font-size: .5vw;
       }
    }
 
