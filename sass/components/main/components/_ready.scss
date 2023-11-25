@@ -18,7 +18,7 @@
       &:last-child{
          @include indentations(1.563vw 0 0 0, 3.906vw 2.865vw);
          border-radius: 28px;
-         background: url(../../../../assets/img/background3.png) center/cover no-repeat;
+         background: url(../assets/img/background3.png) center/cover no-repeat;
       }
 
    }
@@ -49,15 +49,15 @@
       border-radius: 8px;
       flex: 1 0 32.33333333%;
       &:first-child{
-         background: url("../../../../assets/img/card-hand_1.png") right/contain no-repeat , rgba(21, 24, 34, 1);
+         background: url("../assets/img/card-hand_1.png") right/contain no-repeat , rgba(21, 24, 34, 1);
       }
 
       &:nth-child(2){
-         background: url("../../../../assets/img/card-hand_2.png") right/contain no-repeat , rgba(21, 24, 34, 1);
+         background: url("../assets/img/card-hand_2.png") right/contain no-repeat , rgba(21, 24, 34, 1);
       }
 
       &:last-child{
-         background: url("../../../../assets/img/card-hand_3.png") right/contain no-repeat , rgba(21, 24, 34, 1);
+         background: url("../assets/img/card-hand_3.png") right/contain no-repeat , rgba(21, 24, 34, 1);
       }
    }
 

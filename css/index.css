@@ -744,7 +744,7 @@ body {
   margin: 1.563vw 0 0 0;
   padding: 3.906vw 2.865vw;
   border-radius: 28px;
-  background: url(../../../../assets/img/background3.png) center/cover no-repeat;
+  background: url(../assets/img/background3.png) center/cover no-repeat;
 }
 .ready__items {
   width: 100%;
@@ -787,13 +787,13 @@ body {
           flex: 1 0 32.33333333%;
 }
 .ready__card:first-child {
-  background: url("../../../../assets/img/card-hand_1.png") right/contain no-repeat, rgb(21, 24, 34);
+  background: url("../assets/img/card-hand_1.png") right/contain no-repeat, rgb(21, 24, 34);
 }
 .ready__card:nth-child(2) {
-  background: url("../../../../assets/img/card-hand_2.png") right/contain no-repeat, rgb(21, 24, 34);
+  background: url("../assets/img/card-hand_2.png") right/contain no-repeat, rgb(21, 24, 34);
 }
 .ready__card:last-child {
-  background: url("../../../../assets/img/card-hand_3.png") right/contain no-repeat, rgb(21, 24, 34);
+  background: url("../assets/img/card-hand_3.png") right/contain no-repeat, rgb(21, 24, 34);
 }
 .ready .card__items {
   -webkit-box-orient: vertical;
