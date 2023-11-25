@@ -668,6 +668,10 @@ body {
   margin: 0 -50px 0 0;
   padding: 0;
 }
+.supporting__balls li img:hover {
+  -webkit-animation: centrifuge 1s ease-in-out;
+          animation: centrifuge 1s ease-in-out;
+}
 .supporting__balls li:first-child :not(img:nth-child(2)) {
   margin: 0 -2.604vw -3.646vw 0;
   padding: 0;
@@ -685,6 +689,19 @@ body {
   padding: 0;
 }
 
+@-webkit-keyframes centrifuge {
+  to {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg);
+  }
+}
+
+@keyframes centrifuge {
+  to {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg);
+  }
+}
 .ready {
   width: 100%;
   height: -webkit-fit-content;

@@ -74,6 +74,10 @@
         &:nth-child(-n + 2) {
           @include indentations(0 -50px 0 0, 0);
         }
+
+        &:hover{
+          animation: centrifuge 1s ease-in-out;
+        }
       }
 
       &:first-child{
@@ -95,5 +99,12 @@
         }
       }
     }
+  }
+}
+
+
+@keyframes centrifuge {
+  to{
+    transform: rotate(-405deg);
   }
 }
