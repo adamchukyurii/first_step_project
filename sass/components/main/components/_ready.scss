@@ -112,7 +112,7 @@
             background: none;
             border: none;
             @include font-style(var(--small-fz), var(--bold-fw), var(--h3-lh));
-            border: none;
+            border: none; 
             border-radius: 8px;
             background: var(--input-bg);
             transition: all .1s ease-in-out 0s;

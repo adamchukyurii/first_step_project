@@ -207,14 +207,14 @@ body {
   position: relative;
 }
 .header__element:last-child ul li:first-child::before {
-  content: url("../../../../assets/icons/globe.png");
+  content: url("../assets/icons/globe.png");
   display: inline-block;
   position: relative;
   margin: 0 1.042vw 0 0;
   padding: 0;
 }
 .header__element:last-child ul li:last-child::before {
-  content: url("../../../../assets/icons/dollar.png");
+  content: url("../assets/icons/dollar.png");
   display: inline-block;
   position: relative;
   margin: 0 1.042vw 0 0;
@@ -226,7 +226,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background: url("../../../../assets/img/planet-background.png") right/contain no-repeat, url("../../../../assets/img/background.png") no-repeat center/cover;
+  background: url("../assets/img/planet-background.png") right/contain no-repeat, url("../assets/img/background.png") no-repeat center/cover;
   margin: 0;
   padding: 9.375vw 8.59375vw 5.2083333333vw 8.59375vw;
 }
@@ -391,7 +391,7 @@ body {
   height: fit-content;
   margin: 0;
   padding: 4.948vw 5.2083333333vw 8.59375vw;
-  background: url(../../../../assets/img/background2.png) center/cover;
+  background: url(../assets/img/background2.png) center/cover;
 }
 .instruments__list {
   display: -webkit-box;
@@ -492,7 +492,7 @@ body {
       -ms-flex: 1 1 34.132vw;
           flex: 1 1 34.132vw;
   max-width: 655.33px;
-  background: url("../../../../assets/img/macbookpro.png") no-repeat;
+  background: url("../assets/img/macbookpro.png") no-repeat;
 }
 .instruments__mac img {
   scale: 1.05;
@@ -1192,14 +1192,14 @@ body {
   position: relative;
 }
 .header__element:last-child ul li:first-child::before {
-  content: url("../../../../assets/icons/globe.png");
+  content: url("../assets/icons/globe.png");
   display: inline-block;
   position: relative;
   margin: 0 1.042vw 0 0;
   padding: 0;
 }
 .header__element:last-child ul li:last-child::before {
-  content: url("../../../../assets/icons/dollar.png");
+  content: url("../assets/icons/dollar.png");
   display: inline-block;
   position: relative;
   margin: 0 1.042vw 0 0;

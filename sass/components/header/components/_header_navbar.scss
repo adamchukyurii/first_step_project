@@ -46,12 +46,12 @@
             position: relative;
 
             &:first-child::before{
-               @include pseudo-element(url("../../../../assets/icons/globe.png"), inline-block, relative);
+               @include pseudo-element(url("../assets/icons/globe.png"), inline-block, relative);
                @include indentations(0 1.042vw 0 0, 0);
             }
 
             &:last-child::before{
-               @include pseudo-element(url("../../../../assets/icons/dollar.png"), inline-block, relative);
+               @include pseudo-element(url("../assets/icons/dollar.png"), inline-block, relative);
                @include indentations(0 1.042vw 0 0, 0);
             }
          }

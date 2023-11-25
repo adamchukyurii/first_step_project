@@ -138,14 +138,14 @@ body {
   position: relative;
 }
 .header__element:last-child ul li:first-child::before {
-  content: url("../../../../assets/icons/globe.png");
+  content: url("../assets/icons/globe.png");
   display: inline-block;
   position: relative;
   margin: 0 1.042vw 0 0;
   padding: 0;
 }
 .header__element:last-child ul li:last-child::before {
-  content: url("../../../../assets/icons/dollar.png");
+  content: url("../assets/icons/dollar.png");
   display: inline-block;
   position: relative;
   margin: 0 1.042vw 0 0;

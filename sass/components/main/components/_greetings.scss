@@ -1,6 +1,6 @@
 .greettings{
    @include dimensions(100%, fit-content);
-   background:url("../../../../assets/img/planet-background.png") right/contain no-repeat , url("../../../../assets/img/background.png") no-repeat center/cover;
+   background:url("../assets/img/planet-background.png") right/contain no-repeat , url("../assets/img/background.png") no-repeat center/cover;
    @include indentations(0, 9.375vw 8.59375vw 5.208333333333333vw 8.59375vw);
    &__list{
       @include dimensions(100%, fit-content);
