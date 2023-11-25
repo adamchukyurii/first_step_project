@@ -82,7 +82,7 @@
          background: var(--btn-color);
          border-radius: 66px;
          @include indentations(0 0 0, calc(1.6666666666666667vw/2) 1.6666666666666667vw);
-         @include font-style(var(--btn-fz), var(--bold-fw), var(--h3-lh));
+         @include font-style(.5, var(--bold-fw), var(--h3-lh));
          text-align: center;
          max-width: 11.666666666666666vw;
          transition: .5s all ease-in 0s;

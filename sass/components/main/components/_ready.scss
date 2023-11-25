@@ -106,7 +106,7 @@
          @include indentations(1.563vw 0 0 0, 1.042vw 1.563vw);
          gap: 1.25vw;
          input{
-            @include indentations(0, 0 0 0 1.25vw);
+            @include indentations(0, 1.25vw);
             width: 100%;
             color: #fff;
             background: none;

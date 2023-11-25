@@ -282,7 +282,7 @@ body {
   border-radius: 66px;
   margin: 0 0 0;
   padding: 0.8333333333vw 1.6666666667vw;
-  font-size: var(--btn-fz);
+  font-size: 0.5;
   font-weight: var(--bold-fw);
   line-height: var(--h3-lh);
   text-align: center;
