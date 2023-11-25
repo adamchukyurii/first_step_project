@@ -878,10 +878,13 @@ body {
   border: none;
   border-radius: 8px;
   background: var(--input-bg);
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
 }
 .ready__subscription-news .input input:focus {
   border: none;
   outline: none;
+  background: var(--input-bg-hover);
 }
 .ready__subscription-news .input button {
   right: 0.521vw;
