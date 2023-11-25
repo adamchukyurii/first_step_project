@@ -103,15 +103,17 @@
       .input{
          @include flex(space-between, center);
          position: relative;
+         @include indentations(1.563vw 0 0 0, 1.042vw 1.563vw);
+         gap: 1.25vw;
          input{
+            @include indentations(0, 0 0 0 1.25vw);
             width: 100%;
             color: #fff;
             background: none;
             border: none;
-            @include font-style(var(--base-fz), var(--bold-fw), var(--h3-lh));
+            @include font-style(var(--small-fz), var(--bold-fw), var(--h3-lh));
             border: none;
-            border-radius: 14px;
-            @include indentations(1.563vw 0 0 0, 1.042vw 1.563vw);
+            border-radius: 8px;
             background: var(--input-bg);
             &:focus{
                border: none;
@@ -120,7 +122,6 @@
          }
 
          button{
-            position: absolute;
             right: 0.521vw;
             top: 1.963vw;
             color: #fff;

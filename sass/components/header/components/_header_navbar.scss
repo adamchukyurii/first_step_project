@@ -39,21 +39,20 @@
          li{
             color: #fff;
             text-transform: uppercase;
-            @include indentations(0 .78125vw, 0.78125vw 0.78125vw 0.78125vw 2.0833333333333335vw);
+            @include indentations(0 .78125vw, 0.78125vw);
             @include glass-efect;
+            vertical-align: center;
             border-radius: 8px;
             position: relative;
 
             &:first-child::before{
-               @include pseudo-element(url("../../../../assets/icons/globe.png"), inline-block, absolute);
-               left: 0.6770833333333334vw;
-               top: 0.8770833333333334vw;
+               @include pseudo-element(url("../../../../assets/icons/globe.png"), inline-block, relative);
+               @include indentations(0 1.042vw 0 0, 0);
             }
 
             &:last-child::before{
-               @include pseudo-element(url("../../../../assets/icons/dollar.png"), inline-block, absolute);
-               left: 0.4670833333333334vw;
-               top: 0.7570833333333334vw;
+               @include pseudo-element(url("../../../../assets/icons/dollar.png"), inline-block, relative);
+               @include indentations(0 1.042vw 0 0, 0);
             }
          }
       }

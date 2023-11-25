@@ -2,7 +2,7 @@
    background: linear-gradient(267.43deg, rgba(0, 255, 163, 0.12) 36.58%, rgba(31, 26, 255, 0.2) 80.91%);
    width: 100%;
    height: fit-content;
-   @include indentations(0, 0.8333333333333334vw 8.854166666666666vw)
+   @include indentations(0, 0.8333333333333334vw 8.854166666666666vw);
 }
 @import "./components/header_navbar";
 

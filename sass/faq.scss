@@ -1,0 +1,188 @@
+@import "./utils/app";
+@import "./utils/mixin";
+@import "./utils/root";
+@import "./components/header/header";
+@import "./components/footer/footer";
+@import "./components/media-queries";
+.main{
+   @include dimensions(100%, fit-content);
+   .questions{
+      @include dimensions(100%, fit-content);
+      background: url("../assets/img/background4.png") center/cover no-repeat;
+      .container{
+         @include indentations(0 auto,9.115vw 8.594vw 3.906vw 8.594vw);
+      }
+
+      &__list{
+         @include flex(space-between, flex-start);
+         flex-direction: column;
+      }
+
+      &__element{
+         @include dimensions(100%, fit-content);
+         &:nth-child(2){
+            @include flex(flex-start, flex-start);
+            flex-direction: column;
+            gap: 1.563vw;
+            .questions__items:first-child{
+               @include dimensions(100%, fit-content);
+            }
+            .questions__items:last-child{
+               @include dimensions(100%, fit-content);
+               @include glass-efect;
+               @include flex(space-between, flex-start);
+               gap: 4.688vw;
+               @include indentations(0, 3.125vw 0 3.125vw 3.125vw);
+               border-radius: 16px;
+            }
+         }
+      }
+
+      .often-quesitons{
+         @include dimensions(100%, fit-content);
+         display: -webkit-box;
+
+         &__items{
+            color: #fff;
+            flex: 1 0 100%;
+            &:last-child{
+               @include flex(flex-end, center);
+            }
+         }
+
+         &__item{
+            h1{
+               @include font-style(vart(--h1-fz), var(--h1-fw), var(--h1-lh));
+            }
+
+            div{
+               @include dimensions(100%, fit-content);
+               position: relative;
+               input{
+                  @include dimensions(100%, fit-content);
+                  width: 100%;
+                  color: #fff !important;
+                  background: none;
+                  border: none;
+                  @include font-style(var(--base-fz), var(--bold-fw), var(--h3-lh));
+                  border: none;
+                  border-radius: 14px;
+                  @include indentations(0, 1.042vw 1.563vw);
+                  background: var(--input-bg);
+                  &:focus{
+                     border: none;
+                     outline: none;
+                  }
+               }
+         
+               button{
+                  text-align: center;
+                  position: absolute;
+                  right: 0.521vw;
+                  top: 0.463vw;
+                  color: #fff !important;
+                  background: var(--btn-color);
+                  border-radius: 66px;
+                  @include indentations(0 0 0, calc(1.666666666666667vw/2) 1.6666666666666667vw calc(1.0066666666666667vw/2) 1.6666666666666667vw);
+                  @include font-style(var(--btn-fz), var(--bold-fw), var(--h3-lh));
+                  text-align: center;
+                  max-width: 11.666666666666666vw;
+                  transition: .5s all ease-in 0s;
+                  text-transform: uppercase;
+                  border: none;
+                  z-index: 2;
+                  &:hover{
+                     background: var(--btn-hover);
+                  }
+               }
+            }
+         }
+      }
+
+
+      &__item{
+         @include dimensions(100%, fit-content);
+         color: #fff;
+         .items__list{
+            @include dimensions(50%, fit-content);
+            @include flex(space-between, center);
+            li{
+               background: rgba(26, 32, 74, 1);
+               @include indentations(0,0.521vw 2.083vw);
+               border-radius: 37px;
+               transition: all .5s ease-in-out 0s;
+               &:hover{
+                  background: var(--btn-color);
+               }
+            }
+         }
+
+         &:nth-child(2){
+            input{
+               width: 100%;
+               color: #fff;
+               background: none;
+               border: none;
+               @include font-style(var(--base-fz), var(--bold-fw), var(--h3-lh));
+               border: none;
+               border-radius: 14px;
+               @include indentations(1.563vw 0 0 0, 1.042vw 1.563vw);
+               background: var(--input-bg);
+               &:focus{
+                  border: none;
+                  outline: none;
+               }
+            }
+         }
+      }
+
+      &__form{
+         h2{
+            @include font-style(var(--h2-fz), var(--h2-fw), var(--h2-lh));
+            // color: #fff;
+         }
+
+         span{
+            @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+         }
+
+         .input{
+            @include font-style(var(--base-fz), var(--base-fw), var(--h3-lh));
+            input{
+               width: 100%;
+               color: #fff;
+               background: none;
+               border: none;
+               @include font-style(var(--base-fz), var(--bold-fw), var(--h3-lh));
+               border: none;
+               border-radius: 14px;
+               @include indentations(0 0 1.563vw 0, 1.042vw 1.563vw);
+               background: var(--input-bg);
+               &:focus{
+                  border: none;
+                  outline: none;
+               }
+            }
+         }
+
+         div{
+            button{
+               color: #fff !important;
+               background: var(--btn-color);
+               border-radius: 66px;
+               @include indentations(0 0 0, calc(1.006666666666667vw/2) 1.6666666666666667vw calc(1.0066666666666667vw/2) 1.6666666666666667vw);
+               @include font-style(var(--btn-fz), var(--bold-fw), var(--h3-lh));
+               text-align: center;
+               max-width: 11.666666666666666vw;
+               transition: .5s all ease-in 0s;
+               text-transform: uppercase;
+               border: none;
+               z-index: 2;
+               &:hover{
+                  background: var(--btn-hover);
+               }
+            }
+         }
+      }
+   }
+}

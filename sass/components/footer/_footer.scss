@@ -7,6 +7,7 @@
       @include dimensions(100%, fit-content);
       display: grid;
       grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 3.25vw;
    }
 
    &__element:has(li){

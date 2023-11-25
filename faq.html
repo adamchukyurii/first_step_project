@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/faq.min.css">
    <title>FAQ</title>
 </head>
 <body>
@@ -29,57 +30,63 @@
          </div>
       </div>
    </header>
-   <main>
+   <main class="main">
       <section class="questions">
-         <div class="questions__list">
-            <div class="questions__element">
-               <div class="often-quesitons">
-                  <div class="often-questions__items">
-                     <ul class="often-questions__item">
-                        <h1>Often Asking qustions</h1>
-                        <li>
-                           <input type="text" placeholder="Start taping...">
-                           <button><a href=""><img src="./assets/icons/search.png" alt=""></a></button>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="often-questions__items">
-                     <img src="./assets/img/question.png" alt="">
-                  </div>
-               </div>
-            </div>
-            <div class="questions__element">
-               <div class="question__items">
-                  <div class="question_item">
-                     <ul class="item__list">
-                        <li>All</li>
-                        <li>Acount funciton</li>
-                        <li>Пополнение / Вывод криптовалюты</li>
-                        <li>Security</li>
-                     </ul>
-                  </div>
-                  <div class="question_item">
-                     <input type="text" placeholder="Start typing...">
-                  </div>
-                  <div class="question_item">
-                     <div class="item__list">
-                        <h2>Havent found answers ?</h2>
-                        <span>Ask question us and we will get back around 24 hours</span>
-                        <div class="input">Your email:
-                           <input type="text" placeholder="Start typing...">
+         <div class="container">
+            <div class="questions__list">
+               <div class="questions__element">
+                  <div class="often-quesitons">
+                     <div class="often-quesitons__items">
+                        <div class="often-quesitons__item">
+                           <h1>Often Asking qustions</h1>
+                           <div>
+                              <input type="text" placeholder="Start taping...">
+                              <button><img src="./assets/icons/search.png" alt=""></button>
+                           </div>
                         </div>
-                        <div class="input">
-                           Your question:
-                           <input type="text" placeholder="Start typing...">
-                        </div>
-                        <div>
-                           <button>send</button>
-                        </div>
+                     </div>
+                     <div class="often-quesitons__items">
+                         <!-- before 900px display none -->
+                        <img class="question-img" src="./assets/img/question.png" alt="">
                      </div>
                   </div>
                </div>
-               <div class="question__img">
-                  <img src="./assets/img/hand_question.png" alt="">
+               <div class="questions__element">
+                  <div class="questions__items">
+                     <div class="questions__item">
+                        <ul class="items__list">
+                           <li>All</li>
+                           <li>Acount funciton</li>
+                           <li>Replenishment</li>
+                           <li>Security</li>
+                        </ul>
+                     </div>
+                     <div class="questions__item">
+                        <input type="text" placeholder="Start typing...">
+                     </div>
+                  </div>
+                  <div class="questions__items">
+                     <div class="questions__item">
+                        <div class="questions__form">
+                           <h2>Havent found answers ?</h2>
+                           <span>Ask question us and we will get back around 24 hours</span>
+                           <div class="input">Your email:
+                              <input type="text" placeholder="Start typing...">
+                           </div>
+                           <div class="input">
+                              Your question:
+                              <input type="text" placeholder="Start typing...">
+                           </div>
+                           <div>
+                              <button>send</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="questions__img">
+                        <!-- before 900px display none -->
+                        <img id="random-img" src="./assets/img/hand_question.png" alt="">
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
